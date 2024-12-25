@@ -94,7 +94,7 @@ const Footer = () => {
 
           {/* Address Section */}
           <div className="flex gap-2 items-center mb-4">
-            <IoLocationSharp className="lg:text-3xl text-5xl text-[#eb5f30]" />
+            <IoLocationSharp className="lg:text-3xl text-5xl" />
             <p className="text-lg text-gray-700">
               Plot No. 69, Mathura Road, Near Neelam Flyover, Sector 20 A,
               Faridabad, Haryana 121 002
