@@ -24,7 +24,7 @@ const Contact = () => {
             {/* Emergency Appointment Section */}
             <div>
               <div className="flex gap-2">
-                <IoIosCall className="text-xl text-[#eb5f30]" />
+                <IoIosCall className="text-xl text-[#eb5f30] mt-1" />
                 <p className="font-semibold text-lg text-gray-800">
                   Emergency:
                 </p>

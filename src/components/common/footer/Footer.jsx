@@ -8,7 +8,7 @@ import { IoLocationSharp } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <div className="dark:bg-white">
+    <div className="dark:bg-white lg:px-0 px-5">
       <div className="lg:grid grid-cols-12 gap-6 py-5 pt-10">
         {/* Left Section */}
         <div className="col-start-2 col-span-4 px-5 lg:px-0">
@@ -56,7 +56,9 @@ const Footer = () => {
           <div className="mb-4">
             <div className="flex gap-2 items-center mb-2">
               <IoIosCall className="text-3xl text-[#eb5f30]" />
-              <p className="font-semibold text-lg text-gray-800">Emergency:</p>
+              <p className="font-semibold text-lg text-gray-800 mt-1">
+                Emergency:
+              </p>
               <Link
                 href="tel:+91 954 011 4114"
                 className="font-semibold text-lg text-blue-600 hover:text-[#eb5f30]"
