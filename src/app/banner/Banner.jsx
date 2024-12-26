@@ -31,7 +31,7 @@ const Banner = () => {
           </div>
         </div>
         {/* Right Section: Form */}
-        <div className="lg:mt-10 lg:ml-20 md:items-center py-5 px-5 relative flex justify-center lg:block">
+        <div className="lg:mt-10 lg:ml-20 md:items-center lg:py-5 lg:px-5 relative flex justify-center lg:block">
           <Form />
         </div>
       </div>

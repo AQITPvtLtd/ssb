@@ -9,8 +9,8 @@ const ExpertDetail = ({ id }) => {
   return (
     <div>
       <div key={obj.id} className="bg-[#eb5f30] p-6">
-        <div className="px-10 bg-white py-9 rounded-3xl">
-          <div className=" flex justify-center">
+        <div className="lg:px-10 px-3 bg-white py-9 rounded-3xl">
+          <div className="flex justify-center">
             <span className="border border-orange-400 px-3 py-2 rounded-xl flex text-gray-700">
               <Link href="/" className="flex font-semibold">
                 Home <AiOutlineDoubleRight className="mt-1" />
@@ -19,8 +19,8 @@ const ExpertDetail = ({ id }) => {
             </span>
           </div>
 
-          <div className="grid grid-cols-12">
-            <div className="col-start-2 col-span-4 mt-10">
+          <div className="lg:grid lg:grid-cols-12">
+            <div className="col-start-2 col-span-4 mt-10 sm:col-span-12 sm:text-center">
               <div
                 className="rounded-t-lg"
                 style={{
@@ -45,7 +45,7 @@ const ExpertDetail = ({ id }) => {
             </div>
 
             {obj.schedule ? (
-              <div className="col-start-7 col-span-5 py-11">
+              <div className="col-start-7 col-span-5 py-11 sm:col-span-12 sm:px-4">
                 <div className="p-4">
                   <h1 className="text-2xl font-semibold text-[#eb5f30] mb-4">
                     OPD Schedule
@@ -100,8 +100,8 @@ const ExpertDetail = ({ id }) => {
               <div>{null}</div> // Show null if obj.about doesn't exist
             )}
 
-            <div className="lg:grid lg:grid-cols-2">
-              {obj.education ? ( // Check if obj.education exists
+            <div className="lg:grid lg:grid-cols-2 sm:grid-cols-1">
+              {obj.education ? (
                 <div className="mt-10">
                   <h1 className="text-4xl font-semibold text-[#eb5f30]">
                     Education
@@ -117,13 +117,13 @@ const ExpertDetail = ({ id }) => {
                   </ul>
                 </div>
               ) : (
-                <div>{null}</div> // Show null if obj.education doesn't exist
+                <div>{null}</div>
               )}
 
               {obj.experince ? (
                 <div className="mt-10">
-                  <h1 className="text-4xl font-semibold text-[#eb5f30] ">
-                    Experince
+                  <h1 className="text-4xl font-semibold text-[#eb5f30]">
+                    Experience
                   </h1>
                   <ul className="list-disc pl-6 mt-4 text-gray-700">
                     {Array.isArray(obj.experince) ? (
@@ -140,10 +140,10 @@ const ExpertDetail = ({ id }) => {
               )}
             </div>
 
-            <div className="lg:grid lg:grid-cols-2">
+            <div className="lg:grid lg:grid-cols-2 sm:grid-cols-1">
               {obj.achievements ? (
                 <div className="mt-10">
-                  <h1 className="text-4xl font-semibold text-[#eb5f30] ">
+                  <h1 className="text-4xl font-semibold text-[#eb5f30]">
                     Achievements
                   </h1>
                   <ul className="list-disc pl-6 mt-4 text-gray-700">
@@ -162,7 +162,7 @@ const ExpertDetail = ({ id }) => {
 
               {obj.specialinterest ? (
                 <div className="mt-10">
-                  <h1 className="text-4xl font-semibold text-[#eb5f30] ">
+                  <h1 className="lg:text-4xl text-3xl font-semibold text-[#eb5f30]">
                     Special Interest
                   </h1>
                   <ul className="list-disc pl-6 mt-4 text-gray-700">
@@ -182,7 +182,7 @@ const ExpertDetail = ({ id }) => {
 
             {obj.publication ? (
               <div className="mt-10">
-                <h1 className="text-4xl font-semibold text-[#eb5f30] ">
+                <h1 className="text-4xl font-semibold text-[#eb5f30]">
                   Publication
                 </h1>
                 <ul className="list-disc pl-6 mt-4 text-gray-700">
