@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="dark:bg-white lg:px-0 px-5">
       <div className="lg:grid grid-cols-12 gap-6 py-5 pt-10">
         {/* Left Section */}
-        <div className="col-start-2 col-span-4 px-5 lg:px-0">
+        <div className="col-start-2 col-span-4 px-2 lg:px-0">
           <Link href="/">
             <Image
               src="/logo/logo.png"
@@ -73,7 +73,7 @@ const Footer = () => {
                   Appointment:
                 </p>
               </div>
-              <div className="flex flex-col sm:flex-row gap-1 sm:ml-2">
+              <div className="flex ml-9 lg:ml-0 gap-2 lg:mt-1 mt-0">
                 <Link
                   href="tel:+91 98736 98775"
                   className="font-semibold text-lg text-blue-600 hover:text-[#eb5f30]"

@@ -42,7 +42,7 @@ const Contact = () => {
                     Appointment:
                   </p>
                 </div>
-                <div className="flex flex-col sm:flex-row gap-1 sm:ml-2">
+                <div className="flex gap-1 ml-7 lg:ml-0">
                   <Link
                     href="tel:+91 98736 98775"
                     className="font-semibold text-lg text-blue-600 hover:text-[#eb5f30]"
