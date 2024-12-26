@@ -35,25 +35,27 @@ const Contact = () => {
                   +91 954 011 4114
                 </Link>
               </div>
-              <div className="lg:flex gap-2">
-                <div className="flex gap-2">
+              <div className="flex flex-col sm:flex-row gap-2">
+                <div className="flex items-center">
                   <IoIosCall className="text-xl mt-1 text-[#eb5f30]" />
-                  <p className="font-semibold text-lg text-gray-800">
+                  <p className="font-semibold text-lg text-gray-800 ml-2">
                     Appointment:
                   </p>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-1 sm:ml-2">
                   <Link
                     href="tel:+91 98736 98775"
                     className="font-semibold text-lg text-blue-600 hover:text-[#eb5f30]"
                   >
                     +91 98736 98775,
                   </Link>
+                  <Link
+                    href="tel:+91 99587 92906"
+                    className="font-semibold text-lg text-blue-600 hover:text-[#eb5f30]"
+                  >
+                    +91 99587 92906
+                  </Link>
                 </div>
-                <Link
-                  href="tel:+91 99587 92906"
-                  className="font-semibold text-lg text-blue-600 hover:text-[#eb5f30] text-center"
-                >
-                  +91 99587 92906
-                </Link>
               </div>
             </div>
 

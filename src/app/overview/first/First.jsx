@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 const First = () => {
   return (
-    <div className="lg:grid lg:grid-cols-2 py-10 gap-5 flex flex-col-reverse">
+    <div className="lg:grid lg:grid-cols-2 lg:py-10 py-5 gap-5 flex flex-col-reverse">
       <div>
         <p className="text-lg text-gray-800">
           The{" "}

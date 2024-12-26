@@ -4,7 +4,7 @@ const Third = () => {
   return (
     <div className="lg:grid lg:grid-cols-2 py-5 flex flex-col-reverse">
       <div className="lg:px-5">
-        <p className="font-extrabold text-2xl mb-4 text-gray-800">
+        <p className="font-extrabold text-2xl mb-4 mt-5 lg:mt-0 text-gray-800">
           Key Features to Highlight:
         </p>
 

@@ -4,7 +4,7 @@ import Image from "next/image";
 import { expertData } from "@/data/expert";
 const Experts = () => {
   return (
-    <div className="relative mt-10 sm:mt-64 md:mt-0">
+    <div className="relative mt-44 sm:mt-64 md:mt-0">
       <h1 className="text-center font-semibold lg:text-4xl text-2xl text-[#eb5f30] pt-10">
         OUR EXPERTS
       </h1>
@@ -13,7 +13,7 @@ const Experts = () => {
         {expertData.map((e) => (
           <div
             key={e.id}
-            className="w-full max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 dark:bg-white"
+            className="w-full max-w-sm bg-white rounded-lg shadow-md dark:border-gray-700 dark:bg-white"
           >
             <div
               className="rounded-t-lg"
