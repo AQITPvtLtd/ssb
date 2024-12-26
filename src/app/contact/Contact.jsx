@@ -61,7 +61,7 @@ const Contact = () => {
 
             {/* Email Section */}
             <div className="flex gap-2 pt-2 items-center ">
-              <IoMdMail className="text-xl text-blue-600" />
+              <IoMdMail className="text-xl text-[#eb5f30]" />
               <Link
                 href="mailto:info@ssbhealthcare.com"
                 className="text-lg font-semibold text-gray-800 hover:text-[#eb5f30]"
@@ -72,7 +72,9 @@ const Contact = () => {
 
             {/* Address Section */}
             <div className="flex pt-2 gap-2">
-              <FaLocationDot className="lg:text-xl mt-1 text-4xl text-red-600" />
+              <div className="text-xl">
+                <FaLocationDot className=" mt-1 text-[#eb5f30]" />
+              </div>
               <p className="text-lg font-semibold text-gray-800 max-w-md hover:text-[#eb5f30]">
                 Plot No. 69, Mathura Road, Near Neelam Flyover, Sector 20 A,
                 Faridabad, Haryana 121002

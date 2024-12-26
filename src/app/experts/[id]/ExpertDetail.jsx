@@ -19,8 +19,8 @@ const ExpertDetail = ({ id }) => {
             </span>
           </div>
 
-          <div className="lg:grid lg:grid-cols-12">
-            <div className="col-start-2 col-span-4 mt-10 sm:col-span-12 sm:text-center">
+          <div className="lg:grid grid-cols-12">
+            <div className="col-start-2 col-span-4 mt-10 sm:text-center">
               <div
                 className="rounded-t-lg"
                 style={{
@@ -45,7 +45,7 @@ const ExpertDetail = ({ id }) => {
             </div>
 
             {obj.schedule ? (
-              <div className="col-start-7 col-span-5 py-11 sm:col-span-12 sm:px-4">
+              <div className="col-start-7 col-span-5 py-11 sm:px-4">
                 <div className="p-4">
                   <h1 className="text-2xl font-semibold text-[#eb5f30] mb-4">
                     OPD Schedule

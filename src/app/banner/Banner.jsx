@@ -16,9 +16,9 @@ const Banner = () => {
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 h-full">
+      <div className="relative z-10 lg:grid grid-cols-12 h-full">
         {/* Left Section: Image and Offer */}
-        <div className="flex items-center justify-center p-5">
+        <div className="col-start-2 col-span-5 flex items-center justify-center p-5">
           <div className="relative w-full max-w-md">
             <Image
               src="/banner/sideimg.jpg"
@@ -31,7 +31,7 @@ const Banner = () => {
           </div>
         </div>
         {/* Right Section: Form */}
-        <div className="lg:mt-10 lg:ml-20 md:items-center lg:py-5 lg:px-5 relative flex justify-center lg:block">
+        <div className="col-span-5 lg:mt-5 lg:ml-20 md:items-center lg:py-5 lg:px-5 relative flex justify-center lg:block">
           <Form />
         </div>
       </div>

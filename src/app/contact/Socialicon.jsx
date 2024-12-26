@@ -8,7 +8,7 @@ import Link from "next/link";
 const Socialicon = () => {
   return (
     <div>
-      <div className="flex justify-center lg:gap-6 gap-3 py-4">
+      <div className="flex justify-center lg:gap-6 gap-3 py-4 ">
         <Link
           href="https://www.facebook.com/ssbheartandmultispecialtyhospital"
           target="__blank"
