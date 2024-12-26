@@ -24,10 +24,12 @@ const Contact = () => {
             {/* Emergency Appointment Section */}
             <div>
               <div className="flex gap-2">
-                <IoIosCall className="text-xl text-[#eb5f30] mt-1" />
-                <p className="font-semibold text-lg text-gray-800">
-                  Emergency:
-                </p>
+                <div className="flex gap-2">
+                  <IoIosCall className="text-xl text-[#eb5f30] mt-1" />
+                  <p className="font-semibold text-lg text-gray-800">
+                    Emergency:
+                  </p>
+                </div>
                 <Link
                   href="tel:+91 954 011 4114"
                   className="font-semibold text-lg text-blue-600 hover:text-[#eb5f30]"
@@ -42,13 +44,15 @@ const Contact = () => {
                     Appointment:
                   </p>
                 </div>
-                <div className="flex gap-1 ml-7 lg:ml-0">
+
+                <div className="flex gap-1 lg:ml-0">
                   <Link
                     href="tel:+91 98736 98775"
                     className="font-semibold text-lg text-blue-600 hover:text-[#eb5f30]"
                   >
                     +91 98736 98775,
                   </Link>
+
                   <Link
                     href="tel:+91 99587 92906"
                     className="font-semibold text-lg text-blue-600 hover:text-[#eb5f30]"
