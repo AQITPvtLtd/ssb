@@ -22,7 +22,7 @@ const Top = () => {
       {/* Email and Location Section */}
       <div className="flex flex-col justify-center items-center text-center lg:text-left space-y-4">
         <div className="flex items-center gap-2">
-          <MdEmail className="text-3xl" />
+          <MdEmail className="text-xl" />
           <Link
             href="mailto:info@ssbhealthcare.com"
             className="font-semibold text-lg hover:text-[#eb5f30]"
@@ -35,11 +35,11 @@ const Top = () => {
           <IoLocationSharp className="text-3xl" />
           <Link
             href="https://www.google.com/maps/place/SSB+Heart+And+Multispecialty+Hospital/@28.3468466,76.7922585,9.75z/data=!4m20!1m13!4m12!1m4!2m2!1d77.2077968!2d28.6329434!4e1!1m6!1m2!1s0x390cdc4836be0d4b:0x5acd8fcb2eee0ce7!2sSSB+Heart+And+Multispecialty+Hospital,+Plot+No,+69,+NH-19,+near+Neelam+Flyover,+Sector+20+A,+New+Industrial+Township,+Faridabad,+Haryana+121001!2m2!1d77.3101748!2d28.3930904!3m5!1s0x390cdc4836be0d4b:0x5acd8fcb2eee0ce7!8m2!3d28.3930904!4d77.3101748!16s%2Fg%2F11f3v2_8q9?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
-            className="text-xl text-gray-700 hover:text-[#eb5f30] font-semibold"
+            className="text-lg text-gray-700 hover:text-[#eb5f30] font-semibold"
             target="__blank"
           >
             Plot No. 69, Mathura Road, Near Neelam Flyover, Sector 20 A,
-            Faridabad, Haryana 121 002
+            Faridabad, Haryana 121002
           </Link>
         </div>
       </div>

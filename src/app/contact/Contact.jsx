@@ -22,47 +22,44 @@ const Contact = () => {
             className="px-4 py-2 rounded-2xl"
           >
             {/* Emergency Appointment Section */}
-            <div className="flex flex-col gap-4 px-4 rounded-lg">
-              <div className="flex md:justify-center">
-                <IoIosCall className="text-2xl text-blue-600" />
-                <p className="text-lg font-semibold text-gray-800">
-                  Emergency Appointment:
+            <div>
+              <div className="flex gap-2 items-center justify-center">
+                <IoIosCall className="text-xl text-[#eb5f30]" />
+                <p className="font-semibold text-lg text-gray-800">
+                  Emergency:
                 </p>
+                <Link
+                  href="tel:+91 954 011 4114"
+                  className="font-semibold text-lg text-blue-600 hover:text-[#eb5f30]"
+                >
+                  +91 954 011 4114
+                </Link>
               </div>
-              <div className="ml-5 -mt-3">
-                <div className="flex gap-2 md:justify-center">
-                  <div>
-                    <Link
-                      href="tel:+91 954 011 4114"
-                      className="font-semibold text-lg hover:text-[#eb5f30]"
-                    >
-                      +91 954 011 4114
-                    </Link>
-                  </div>
-                  <div>
-                    <Link
-                      href="tel:+91 98736 98775"
-                      className="font-semibold text-lg hover:text-[#eb5f30]"
-                    >
-                      +91 98736 98775
-                    </Link>
-                  </div>
-
-                  <div>
-                    <Link
-                      href="tel:+91 99587 92906"
-                      className="font-semibold text-lg block hover:text-[#eb5f30]"
-                    >
-                      +91 99587 92906
-                    </Link>
-                  </div>
+              <div className="lg:flex gap-2 items-center justify-center">
+                <div className="flex gap-2">
+                  <IoIosCall className="text-xl mt-1 text-[#eb5f30]" />
+                  <p className="font-semibold text-lg text-gray-800">
+                    Appointment:
+                  </p>
+                  <Link
+                    href="tel:+91 98736 98775"
+                    className="font-semibold text-lg text-blue-600 hover:text-[#eb5f30]"
+                  >
+                    +91 98736 98775,
+                  </Link>
                 </div>
+                <Link
+                  href="tel:+91 99587 92906"
+                  className="font-semibold text-lg text-blue-600 hover:text-[#eb5f30] text-center"
+                >
+                  +91 99587 92906
+                </Link>
               </div>
             </div>
 
             {/* Email Section */}
-            <div className="flex gap-3 items-center px-4 justify-center">
-              <IoMdMail className="text-2xl text-blue-600" />
+            <div className="flex gap-3 pt-2 items-center lg:px-4 px-2 justify-center">
+              <IoMdMail className="text-xl text-blue-600" />
               <Link
                 href="mailto:info@ssbhealthcare.com"
                 className="text-lg font-semibold text-gray-800 hover:text-[#eb5f30]"
@@ -72,11 +69,11 @@ const Contact = () => {
             </div>
 
             {/* Address Section */}
-            <div className="flex px-4 pt-2 md:items-center justify-center">
-              <FaLocationDot className="lg:text-2xl text-4xl text-red-600" />
+            <div className="flex lg:px-4 px-2 pt-2 lg:gap-0 justify-center">
+              <FaLocationDot className="lg:text-xl mt-1 text-4xl text-red-600" />
               <p className="text-lg font-semibold text-gray-800 max-w-md hover:text-[#eb5f30] md:text-center">
                 Plot No. 69, Mathura Road, Near Neelam Flyover, Sector 20 A,
-                Faridabad, Haryana 121 002
+                Faridabad, Haryana 121002
               </p>
             </div>
           </div>
