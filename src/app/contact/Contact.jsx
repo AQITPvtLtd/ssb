@@ -8,7 +8,7 @@ import Socialicon from "./Socialicon";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="dark:bg-white">
       <h1 className="text-center font-semibold lg:text-4xl text-2xl py-10 text-[#eb5f30]">
         Contact us
       </h1>
@@ -23,7 +23,7 @@ const Contact = () => {
           >
             {/* Emergency Appointment Section */}
             <div>
-              <div className="flex gap-2 items-center justify-center">
+              <div className="flex gap-2">
                 <IoIosCall className="text-xl text-[#eb5f30]" />
                 <p className="font-semibold text-lg text-gray-800">
                   Emergency:
@@ -35,7 +35,7 @@ const Contact = () => {
                   +91 954 011 4114
                 </Link>
               </div>
-              <div className="lg:flex gap-2 items-center justify-center">
+              <div className="lg:flex gap-2">
                 <div className="flex gap-2">
                   <IoIosCall className="text-xl mt-1 text-[#eb5f30]" />
                   <p className="font-semibold text-lg text-gray-800">
@@ -58,7 +58,7 @@ const Contact = () => {
             </div>
 
             {/* Email Section */}
-            <div className="flex gap-3 pt-2 items-center lg:px-4 px-2 justify-center">
+            <div className="flex gap-2 pt-2 items-center ">
               <IoMdMail className="text-xl text-blue-600" />
               <Link
                 href="mailto:info@ssbhealthcare.com"
@@ -69,9 +69,9 @@ const Contact = () => {
             </div>
 
             {/* Address Section */}
-            <div className="flex lg:px-4 px-2 pt-2 lg:gap-0 justify-center">
+            <div className="flex pt-2 gap-2">
               <FaLocationDot className="lg:text-xl mt-1 text-4xl text-red-600" />
-              <p className="text-lg font-semibold text-gray-800 max-w-md hover:text-[#eb5f30] md:text-center">
+              <p className="text-lg font-semibold text-gray-800 max-w-md hover:text-[#eb5f30]">
                 Plot No. 69, Mathura Road, Near Neelam Flyover, Sector 20 A,
                 Faridabad, Haryana 121002
               </p>
@@ -85,10 +85,10 @@ const Contact = () => {
             }}
             className="px-4 py-2 rounded-2xl mt-10"
           >
-            <h3 className="text-center font-bold text-2xl pt-2">
+            <h3 className="text-center font-bold text-2xl pt-2 dark:text-gray-900">
               Connect with us on Social Media
             </h3>
-            <p className="text-center font-semibold text-lg pt-2">
+            <p className="text-center font-semibold text-lg pt-2 dark:text-gray-900">
               Stay updated with SSB Hospital! Follow us on social media for the
               latest news, updates, and health tips. Join our community and stay
               connected

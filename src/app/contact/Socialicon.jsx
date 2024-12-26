@@ -19,11 +19,11 @@ const Socialicon = () => {
         </Link>
 
         <Link
-          href="https://x.com/ssbhealthcare"
+          href="https://www.instagram.com/ssbhospital/"
           target="__blank"
-          className="bg-blue-500 p-4 rounded-full shadow-lg shadow-blue-400 hover:bg-[#eb5f30]"
+          className="bg-pink-500 p-4 rounded-full shadow-lg shadow-pink-400 hover:bg-[#eb5f30]"
         >
-          <FaXTwitter className="text-lg text-white" />
+          <FaInstagram className="text-lg text-white" />
         </Link>
 
         <Link
@@ -35,11 +35,11 @@ const Socialicon = () => {
         </Link>
 
         <Link
-          href="https://www.instagram.com/ssbhospital/"
+          href="https://x.com/ssbhealthcare"
           target="__blank"
-          className="bg-pink-500 p-4 rounded-full shadow-lg shadow-pink-400 hover:bg-[#eb5f30]"
+          className="bg-blue-500 p-4 rounded-full shadow-lg shadow-blue-400 hover:bg-[#eb5f30]"
         >
-          <FaInstagram className="text-lg text-white" />
+          <FaXTwitter className="text-lg text-white" />
         </Link>
 
         <Link

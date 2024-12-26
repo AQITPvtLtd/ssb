@@ -27,7 +27,7 @@ const Faq = () => {
               aria-expanded={activeIndex === 1}
               aria-controls="accordion-collapse-body-1"
             >
-              <span className="font-semibold lg:text-xl">
+              <span className="font-semibold lg:text-xl dark:text-gray-700">
                 What conditions do you treat?
               </span>
               <IoIosArrowDown
@@ -45,7 +45,7 @@ const Faq = () => {
             aria-labelledby="accordion-collapse-heading-1"
           >
             <div className="px-5 pb-2">
-              <p>
+              <p className="dark:text-gray-700">
                 Orthopaedics and Joint Replacement is a specialized field of
                 medicine focused on diagnosing, treating, and managing
                 conditions related to the musculoskeletal system, which includes
@@ -65,7 +65,7 @@ const Faq = () => {
               aria-expanded={activeIndex === 2}
               aria-controls="accordion-collapse-body-2"
             >
-              <span className="font-semibold lg:text-xl">
+              <span className="font-semibold lg:text-xl dark:text-gray-700">
                 What technology is used for joint replacements?
               </span>
               <IoIosArrowDown
@@ -83,7 +83,7 @@ const Faq = () => {
             aria-labelledby="accordion-collapse-heading-2"
           >
             <div className="px-5 pb-2">
-              <p>
+              <p className="dark:text-gray-700">
                 Joint replacement surgeries use advanced technologies like
                 robotic-assisted systems for precise implant placement,
                 computer-assisted navigation for alignment accuracy, and 3D
@@ -106,7 +106,7 @@ const Faq = () => {
               aria-expanded={activeIndex === 3}
               aria-controls="accordion-collapse-body-3"
             >
-              <span className="font-semibold lg:text-xl">
+              <span className="font-semibold lg:text-xl dark:text-gray-700">
                 What are recovery timelines for surgery?
               </span>
               <IoIosArrowDown
@@ -123,7 +123,7 @@ const Faq = () => {
             }`}
             aria-labelledby="accordion-collapse-heading-3"
           >
-            <div className="px-5 pb-2">
+            <div className="px-5 pb-2 dark:text-gray-700">
               <p>
                 Recovery timelines for surgery vary by procedure and individual.
                 Typically:
@@ -155,7 +155,7 @@ const Faq = () => {
               aria-expanded={activeIndex === 4}
               aria-controls="accordion-collapse-body-4"
             >
-              <span className="font-semibold lg:text-xl">
+              <span className="font-semibold lg:text-xl dark:text-gray-700">
                 How can I prevent orthopaedic issues?
               </span>
               <IoIosArrowDown
@@ -172,7 +172,7 @@ const Faq = () => {
             }`}
             aria-labelledby="accordion-collapse-heading-4"
           >
-            <div className="px-5 pb-2">
+            <div className="px-5 pb-2 dark:text-gray-700">
               <p className="font-semibold">
                 Preventing orthopaedic issues involves:
               </p>

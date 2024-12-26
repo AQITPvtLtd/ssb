@@ -13,7 +13,7 @@ const Experts = () => {
         {expertData.map((e) => (
           <div
             key={e.id}
-            className="w-full max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
+            className="w-full max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 dark:bg-white"
           >
             <div
               className="rounded-t-lg"
@@ -30,10 +30,8 @@ const Experts = () => {
               />
             </div>
             <div className="p-5 text-center">
-              <h5 className="mb-2 text-lg font-bold text-gray-900 dark:text-white">
-                {e.name}
-              </h5>
-              <p className="mb-4 text-sm text-gray-700 dark:text-gray-400 font-medium">
+              <h5 className="mb-2 text-lg font-bold text-gray-800">{e.name}</h5>
+              <p className="mb-4 text-sm text-gray-700 font-medium">
                 {e.position}
               </p>
               <Link

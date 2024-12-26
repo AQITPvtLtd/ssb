@@ -1,7 +1,6 @@
 import { expertData } from "@/data/expert";
 import React from "react";
 import Image from "next/image";
-import Form from "@/app/contact/form/Form";
 import Link from "next/link";
 import { AiOutlineDoubleRight } from "react-icons/ai";
 
@@ -12,7 +11,7 @@ const ExpertDetail = ({ id }) => {
       <div key={obj.id} className="bg-[#eb5f30] p-6">
         <div className="px-10 bg-white py-9 rounded-3xl">
           <div className=" flex justify-center">
-            <span className="border border-orange-400 px-3 py-2 rounded-xl flex">
+            <span className="border border-orange-400 px-3 py-2 rounded-xl flex text-gray-700">
               <Link href="/" className="flex font-semibold">
                 Home <AiOutlineDoubleRight className="mt-1" />
               </Link>
@@ -38,8 +37,10 @@ const ExpertDetail = ({ id }) => {
                 />
               </div>
               <div className="text-center">
-                <h1 className="font-semibold text-2xl pt-3">{obj.name}</h1>
-                <p className="text-lg">{obj.position}</p>
+                <h1 className="font-semibold text-2xl pt-3 text-gray-700">
+                  {obj.name}
+                </h1>
+                <p className="text-lg text-gray-700">{obj.position}</p>
               </div>
             </div>
 
@@ -49,7 +50,7 @@ const ExpertDetail = ({ id }) => {
                   <h1 className="text-2xl font-semibold text-[#eb5f30] mb-4">
                     OPD Schedule
                   </h1>
-                  <table className="w-full border-collapse border border-gray-300 text-left">
+                  <table className="w-full border-collapse border border-gray-300 text-left text-gray-700">
                     <thead>
                       <tr>
                         <th className="border border-gray-300 px-4 py-2 font-semibold">
@@ -87,7 +88,7 @@ const ExpertDetail = ({ id }) => {
                 <h1 className="text-4xl font-semibold text-[#eb5f30]">
                   About Us
                 </h1>
-                <ul className="list-disc pl-6 mt-4">
+                <ul className="list-disc pl-6 mt-4 text-gray-700">
                   {Array.isArray(obj.about) ? (
                     obj.about.map((item, index) => <li key={index}>{item}</li>)
                   ) : (
@@ -105,7 +106,7 @@ const ExpertDetail = ({ id }) => {
                   <h1 className="text-4xl font-semibold text-[#eb5f30]">
                     Education
                   </h1>
-                  <ul className="list-disc pl-6 mt-4">
+                  <ul className="list-disc pl-6 mt-4 text-gray-700">
                     {Array.isArray(obj.education) ? (
                       obj.education.map((item, index) => (
                         <li key={index}>{item}</li>
@@ -124,7 +125,7 @@ const ExpertDetail = ({ id }) => {
                   <h1 className="text-4xl font-semibold text-[#eb5f30] ">
                     Experince
                   </h1>
-                  <ul className="list-disc pl-6 mt-4">
+                  <ul className="list-disc pl-6 mt-4 text-gray-700">
                     {Array.isArray(obj.experince) ? (
                       obj.experince.map((item, index) => (
                         <li key={index}>{item}</li>
@@ -145,7 +146,7 @@ const ExpertDetail = ({ id }) => {
                   <h1 className="text-4xl font-semibold text-[#eb5f30] ">
                     Achievements
                   </h1>
-                  <ul className="list-disc pl-6 mt-4">
+                  <ul className="list-disc pl-6 mt-4 text-gray-700">
                     {Array.isArray(obj.achievements) ? (
                       obj.achievements.map((item, index) => (
                         <li key={index}>{item}</li>
@@ -164,7 +165,7 @@ const ExpertDetail = ({ id }) => {
                   <h1 className="text-4xl font-semibold text-[#eb5f30] ">
                     Special Interest
                   </h1>
-                  <ul className="list-disc pl-6 mt-4">
+                  <ul className="list-disc pl-6 mt-4 text-gray-700">
                     {Array.isArray(obj.specialinterest) ? (
                       obj.specialinterest.map((item, index) => (
                         <li key={index}>{item}</li>
@@ -184,7 +185,7 @@ const ExpertDetail = ({ id }) => {
                 <h1 className="text-4xl font-semibold text-[#eb5f30] ">
                   Publication
                 </h1>
-                <ul className="list-disc pl-6 mt-4">
+                <ul className="list-disc pl-6 mt-4 text-gray-700">
                   {Array.isArray(obj.publication) ? (
                     obj.publication.map((item, index) => (
                       <li key={index}>{item}</li>
