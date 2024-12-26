@@ -75,7 +75,7 @@ const Form = () => {
             type="text"
             id="Fname"
             name="Fname"
-            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-blue-500"
+            className="w-full border border-gray-300 rounded px-3 py-2 dark:text-gray-800 focus:outline-none focus:border-blue-500"
             placeholder="Enter Your Full Name"
             value={formData.Fname}
             onChange={handleChange}
@@ -90,7 +90,7 @@ const Form = () => {
             type="tel"
             id="Phone"
             name="Phone"
-            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-blue-500"
+            className="w-full border border-gray-300 rounded px-3 py-2 dark:text-gray-800 focus:outline-none focus:border-blue-500"
             placeholder="Enter Your Phone Number"
             value={formData.Phone}
             onChange={handleChange}
@@ -105,7 +105,7 @@ const Form = () => {
             type="email"
             id="Email"
             name="Email"
-            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-blue-500"
+            className="w-full border border-gray-300 rounded px-3 py-2 dark:text-gray-800 focus:outline-none focus:border-blue-500"
             placeholder="Enter Your Email Address"
             value={formData.Email}
             onChange={handleChange}
@@ -119,7 +119,7 @@ const Form = () => {
           <textarea
             id="Message"
             name="Message"
-            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-blue-500"
+            className="w-full border border-gray-300 rounded px-3 py-2 dark:text-gray-800 focus:outline-none focus:border-blue-500"
             placeholder="Write Your Message Here..."
             value={formData.Message}
             onChange={handleChange}
