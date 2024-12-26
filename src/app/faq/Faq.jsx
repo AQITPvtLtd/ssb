@@ -31,7 +31,7 @@ const Faq = () => {
                 What conditions do you treat?
               </span>
               <IoIosArrowDown
-                className={`lg:text-3xl text-lg font-semibold transition-transform duration-300 ${
+                className={`lg:text-3xl text-lg font-semibold transition-transform duration-300 dark:text-gray-700 ${
                   activeIndex === 1 ? "rotate-180" : ""
                 }`}
               />
@@ -69,7 +69,7 @@ const Faq = () => {
                 What technology is used for joint replacements?
               </span>
               <IoIosArrowDown
-                className={`lg:text-3xl text-lg font-semibold transition-transform duration-300 ${
+                className={`lg:text-3xl text-lg font-semibold transition-transform duration-300 dark:text-gray-700 ${
                   activeIndex === 2 ? "rotate-180" : ""
                 }`}
               />
@@ -110,7 +110,7 @@ const Faq = () => {
                 What are recovery timelines for surgery?
               </span>
               <IoIosArrowDown
-                className={`lg:text-3xl text-lg font-semibold transition-transform duration-300 ${
+                className={`lg:text-3xl text-lg font-semibold transition-transform duration-300 dark:text-gray-700 ${
                   activeIndex === 3 ? "rotate-180" : ""
                 }`}
               />
@@ -118,7 +118,7 @@ const Faq = () => {
           </h2>
           <div
             id="accordion-collapse-body-3"
-            className={`overflow-hidden transition-all duration-300 ${
+            className={`overflow-hidden transition-all duration-300 dark:text-gray-700 ${
               activeIndex === 3 ? "max-h-screen" : "max-h-0"
             }`}
             aria-labelledby="accordion-collapse-heading-3"
@@ -159,7 +159,7 @@ const Faq = () => {
                 How can I prevent orthopaedic issues?
               </span>
               <IoIosArrowDown
-                className={`lg:text-3xl text-lg font-semibold transition-transform duration-300 ${
+                className={`lg:text-3xl text-lg font-semibold transition-transform duration-300 dark:text-gray-700 ${
                   activeIndex === 4 ? "rotate-180" : ""
                 }`}
               />
