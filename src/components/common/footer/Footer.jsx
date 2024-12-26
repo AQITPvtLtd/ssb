@@ -73,19 +73,24 @@ const Footer = () => {
                   Appointment:
                 </p>
               </div>
-              <div className="flex ml-9 lg:ml-0 gap-2 lg:mt-1 mt-0">
-                <Link
-                  href="tel:+91 98736 98775"
-                  className="font-semibold text-lg text-blue-600 hover:text-[#eb5f30]"
-                >
-                  +91 98736 98775,
-                </Link>
-                <Link
-                  href="tel:+91 99587 92906"
-                  className="font-semibold text-lg text-blue-600 hover:text-[#eb5f30]"
-                >
-                  +91 99587 92906
-                </Link>
+              <div className="sm:flex gap-2 ml-6 sm:ml-0">
+                <div>
+                  <Link
+                    href="tel:+91 98736 98775"
+                    className="font-semibold text-lg text-blue-600 hover:text-[#eb5f30]"
+                  >
+                    +91 98736 98775,
+                  </Link>
+                </div>
+
+                <div>
+                  <Link
+                    href="tel:+91 99587 92906"
+                    className="font-semibold text-lg text-blue-600 hover:text-[#eb5f30]"
+                  >
+                    +91 99587 92906
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -107,7 +112,7 @@ const Footer = () => {
               <IoLocationSharp className="text-[#eb5f30]" />
             </div>
             <Link
-              href="https://www.google.com/maps/place/SSB+Heart+And+Multispecialty+Hospital/@28.3468466,76.7922585,9.75z/data=!4m20!1m13!4m12!1m4!2m2!1d77.2077968!2d28.6329434!4e1!1m6!1m2!1s0x390cdc4836be0d4b:0x5acd8fcb2eee0ce7!2sSSB+Heart+And+Multispecialty+Hospital,+Plot+No,+69,+NH-19,+near+Neelam+Flyover,+Sector+20+A,+New+Industrial+Township,+Faridabad,+Haryana+121001!2m2!1d77.3101748!2d28.3930904!3m5!1s0x390cdc4836be0d4b:0x5acd8fcb2eee0ce7!8m2!3d28.3930904!4d77.3101748!16s%2Fg%2F11f3v2_8q9?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+              href="https://maps.app.goo.gl/cgtmnHzK4aEEFYtN7"
               className="font-semibold text-lg hover:text-[#eb5f30] dark:text-gray-800"
               target="__blank"
             >

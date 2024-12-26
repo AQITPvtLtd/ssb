@@ -37,28 +37,33 @@ const Contact = () => {
                   +91 954 011 4114
                 </Link>
               </div>
-              <div className="flex flex-col sm:flex-row gap-2">
-                <div className="flex items-center">
+
+              <div className="sm:flex gap-2 block">
+                <div className="flex ">
                   <IoIosCall className="text-xl mt-1 text-[#eb5f30]" />
                   <p className="font-semibold text-lg text-gray-800 ml-2">
                     Appointment:
                   </p>
                 </div>
 
-                <div className="flex gap-1 lg:ml-0">
-                  <Link
-                    href="tel:+91 98736 98775"
-                    className="font-semibold text-lg text-blue-600 hover:text-[#eb5f30]"
-                  >
-                    +91 98736 98775,
-                  </Link>
-
-                  <Link
-                    href="tel:+91 99587 92906"
-                    className="font-semibold text-lg text-blue-600 hover:text-[#eb5f30]"
-                  >
-                    +91 99587 92906
-                  </Link>
+                <div className="sm:flex gap-2 ml-6 sm:ml-0">
+                  <div>
+                    <Link
+                      href="tel:+91 98736 98775"
+                      className="font-semibold text-lg text-blue-600 hover:text-[#eb5f30]"
+                    >
+                      +91 98736 98775,
+                    </Link>
+                  </div>
+                  <br className="hidden " />
+                  <div>
+                    <Link
+                      href="tel:+91 99587 92906"
+                      className="font-semibold text-lg text-blue-600 hover:text-[#eb5f30]"
+                    >
+                      +91 99587 92906
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -79,10 +84,14 @@ const Contact = () => {
               <div className="text-xl">
                 <FaLocationDot className=" mt-1 text-[#eb5f30]" />
               </div>
-              <p className="text-lg font-semibold text-gray-800 max-w-md hover:text-[#eb5f30]">
+              <Link
+                href="https://maps.app.goo.gl/cgtmnHzK4aEEFYtN7"
+                className="font-semibold text-lg hover:text-[#eb5f30] text-gray-800"
+                target="__blank"
+              >
                 Plot No. 69, Mathura Road, Near Neelam Flyover, Sector 20 A,
                 Faridabad, Haryana 121002
-              </p>
+              </Link>
             </div>
           </div>
 
