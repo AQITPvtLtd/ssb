@@ -14,7 +14,8 @@ const Top = () => {
       <nav className="bg-white dark:bg-white border-gray-200 ">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link
-            href="/"
+            href="https://ssbhealthcare.com/"
+            target="__blank"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <Image
