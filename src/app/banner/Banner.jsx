@@ -31,7 +31,7 @@ const Banner = () => {
           </div>
         </div>
         {/* Right Section: Form */}
-        <div className="col-span-5 lg:ml-20 md:items-center lg:px-5 relative flex justify-center lg:block">
+        <div className="col-span-5 lg:ml-20 md:items-center lg:px-5 relative flex justify-center lg:block" id="queryForm">
           <Form />
         </div>
       </div>

@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <div className="dark:bg-white">
       <h1 className="text-center font-semibold lg:text-4xl text-2xl py-10 text-[#eb5f30]">
-        Contact us
+        Submit Your Query
       </h1>
       <div className="lg:grid lg:grid-cols-12 items-center">
         <div className="col-start-2 col-span-5 px-5 lg:px-0">

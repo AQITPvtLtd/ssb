@@ -85,7 +85,7 @@ const Form = () => {
         className="bg-gray-50 px-5 py-2 shadow-lg rounded-lg"
         onSubmit={handleSubmit}
       >
-        <h3 className="text-xl font-semibold text-gray-700 mb-4">Contact us</h3>
+        <h3 className="text-xl font-semibold text-gray-700 mb-4">Submit Your Query</h3>
         <div className="mb-4">
           <label className="block text-gray-600 mb-1" htmlFor="Fname">
             Full Name <span className="text-red-500">*</span>
@@ -148,7 +148,7 @@ const Form = () => {
         </div>
         <div className="mb-2">
           <label className="block text-gray-600 mb-1" htmlFor="Message">
-            Write Problem Hindi/English <span className="text-red-500">*</span>
+            Write Problem English / Hindi <span className="text-red-500">*</span>
           </label>
           <textarea
             id="Message"

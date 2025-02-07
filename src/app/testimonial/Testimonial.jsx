@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 const Testimonial = () => {
   return (
     <div>
@@ -43,9 +43,18 @@ const Testimonial = () => {
             <h2 className="font-semibold lg:text-3xl text-xl text-[#eb5f30]">
               Dr. Shailendra Pratap Singh
             </h2>
+
+            <Link
+              href="#queryForm"
+              className="inline-block px-4 py-2 mt-5 hover:rounded-xl border-2 border-[#eb5f30] text-[#eb5f30] text-sm font-semibold hover:bg-[#eb5f30] hover:text-white transition-all duration-300"
+            >
+              Submit Your Query
+            </Link>
           </div>
+
         </div>
       </div>
+
     </div>
   );
 };
