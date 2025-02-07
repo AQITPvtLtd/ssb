@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 07, 2025 at 01:43 PM
+-- Generation Time: Feb 07, 2025 at 02:41 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -70,15 +70,19 @@ INSERT INTO `contact` (`id`, `name`, `phone`, `email`, `location`, `message`) VA
 ('758445c5-7774-49ba-96d5-d05b4847110a', 'Arjun Rathore', '8085265574', 'arjunrathore12221@gmail.com', '', 'Arjun'),
 ('79b2c213-d5c1-4c3a-89cc-a83f75bb552e', 'Md Mumtaj ', '9910862263', 'mumtaz57992@gmail.com', '', 'Hi'),
 ('7b201e5f-0c08-4c7f-9cf7-dbd1b6d34312', 'Jiten Solanki', '9691103156', 'jiten1012solanki@gmail.com', '', 'Yas'),
+('7b4e0025-ba92-4623-a132-502ea847c067', 'Abhishek mathur', '9879879871', 'nitendrapatel259@gmail.com', 'mukundpur part 1', 'web testing...'),
 ('7b9f2f87-61ee-448c-a78a-d666094ba417', 'Shunder Kumar', '8477086244', 'shunderkumar17@gmail.com', '', '1993'),
 ('7c37a7ec-6705-4e4d-99a3-4d0b81126f6b', 'Lavkush ', '9899692044', 'lavkushlavkush91704@gmail.com', '', 'Happy '),
 ('7c63b096-aaf7-4a36-94e6-757243bff605', 'Md SADIQ', '+91 (9958) 728-306', 'khansadik75965@gmail.com', '', 'Virya donate'),
 ('7ca5ec12-8f41-4900-8ce7-5c136699ba7f', 'Preeti daridrum munda', '9821029027', 'lotusri@gmail.com', '', 'Call me urgently '),
 ('7cf458f8-59f0-4371-824d-aefcb4e0d258', 'NIRMAL YADAV', '917983858428', 'nirmaldugguyadav@gmail.com', '', 'I am very happy Nirmal yadav '),
 ('7e410c03-6432-4ae2-92ad-60a205ba350c', 'Vicky Kumar', '+91 78149 68969', 'vickykumar7814968969@gmail.com', '', 'Hii'),
+('8184f7e7-31e1-48ff-9e90-ead1fe819bd3', 'Abhishek mathur', '9879879871', 'nitendrapatel259@gmail.com', 'Rohini sectior 18', 'web testing...'),
+('840e1b2f-a8d4-418b-bea4-d50b7388970b', 'Nitendra', '9879879871', 'nitendrapatel259@gmail.com', 'Rohini sectior 18', 'website testing...'),
 ('86549f02-e097-401a-8c20-2afe207cac27', 'Mohit ', '8059250091', 'mohitantil185@gmail.com', '', 'Kio ho bta'),
 ('8668ad73-198f-4ff6-a3fd-8b88a3348e90', 'Rohit Kumar', '7632920345', 'rohitkunar981@gmail.com', '', 'Rohit '),
 ('886c0da2-8a34-4c03-99ab-4b5044847f32', 'Harsha', '9560894439', 'shazharsha96@gmail.com', '', 'Gastro'),
+('8b2e441c-2988-4460-ac1a-c2b4c55bc274', 'Abhishek mathur', '9879879871', 'nitendrapatel259@gmail.com', 'Rohini sectior 18', 'web testing...'),
 ('8be57e9c-3a30-411f-b7e2-61bce103c2b2', 'Saeed', '+8801915437991', 'saeedhasib73@gmail.com', '', 'I want my kidney transplant '),
 ('94910f34-6acb-44e0-8479-dcb3343669b3', 'Dinesh Rathour', '9244839484', 'rathourdinesh466@gmail.com', '', 'Ji'),
 ('9b8cd9d8-e270-4f4a-b943-937b1ade1c4a', 'aktar. Ali', '9101496179', 'aktarali11335@gmail.com', '', 'Assam '),

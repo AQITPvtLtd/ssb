@@ -5,7 +5,7 @@ const pool = mysql.createPool({
   host: "127.0.0.1",
   user: "root",
   password: "",
-  database: "ssbhospital",
+  database: "ssb_landingpage",
   waitForConnections: true,
   connectionLimit: 10, // Maximum number of connections in the pool
   queueLimit: 0, // Unlimited queueing

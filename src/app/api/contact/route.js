@@ -18,8 +18,8 @@ export async function POST(request) {
 
     // Database Insert Query
     await pool.query(
-      "INSERT INTO contact(id, name, email, phone, location, message, date) VALUES (?,?,?,?,?,?,?)",
-      [unique_id, Fname, Email, Phone, Location, Message, new Date()]
+      "INSERT INTO contact(id, name, email, phone, location, message) VALUES (?,?,?,?,?,?)",
+      [unique_id, Fname, Email, Phone, Location, Message]
     );
 
     // Nodemailer Transporter
