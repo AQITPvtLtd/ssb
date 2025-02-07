@@ -12,7 +12,7 @@ const Contact = () => {
       <h1 className="text-center font-semibold lg:text-4xl text-2xl py-10 text-[#eb5f30]">
         Contact us
       </h1>
-      <div className="lg:grid lg:grid-cols-12">
+      <div className="lg:grid lg:grid-cols-12 items-center">
         <div className="col-start-2 col-span-5 px-5 lg:px-0">
           <div
             style={{
@@ -114,7 +114,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="col-start-8 col-span-6 lg:px-0 lg:py-0 py-10 px-4">
+        <div className="col-start-8 col-span-4 lg:px-0 lg:py-0 py-10 px-4">
           <Form />
         </div>
       </div>

@@ -5,16 +5,24 @@ import { v4 as uuid } from "uuid";
 
 export async function POST(request) {
   try {
-    const { Fname, Email, Phone, Message } = await request.json();
-    const unique_id = uuid();
-    // Use pool.query with async/await for promises
+    const formData = await request.formData();
 
-    const [results] = await pool.query(
-      "INSERT INTO contact(id, name ,email ,phone , message) VALUES (?,?,?,?,?)",
-      [unique_id, Fname, Email, Phone, Message]
+    const Fname = formData.get("Fname");
+    const Email = formData.get("Email");
+    const Phone = formData.get("Phone");
+    const Location = formData.get("Location");
+    const Message = formData.get("Message");
+    const MedicalReport = formData.get("MedicalReport"); // File
+
+    const unique_id = uuid();
+
+    // Database Insert Query
+    await pool.query(
+      "INSERT INTO contact(id, name, email, phone, location, message) VALUES (?,?,?,?,?,?)",
+      [unique_id, Fname, Email, Phone, Location, Message]
     );
 
-    // Send email using nodemailer
+    // Nodemailer Transporter
     const transporter = nodemailer.createTransport({
       service: "gmail",
       host: "smtp.gmail.com",
@@ -25,34 +33,46 @@ export async function POST(request) {
       },
     });
 
-    // Send email to admin
-    await transporter.sendMail({
+    // Admin Email with Attachment
+    const mailOptionsAdmin = {
       from: process.env.MY_EMAIL,
       to: process.env.MY_EMAIL,
-      subject: "SSB Hospital",
+      subject: "SSB Hospital - New Contact Form Submission",
       html: `<html>
               <body>
-                <h3>You've got a new mail from ${Fname}, their email is: ✉️${Email} And phone Number is ${Phone} </h3>
+                <h3>You've got a new mail from ${Fname}, their email is: ✉️${Email}, phone number is ${Phone}, and location is ${Location}</h3>
                 <p>Message:</p>
                 <p>${Message}</p>
               </body>
              </html>`,
-    });
+      attachments: MedicalReport
+        ? [{
+          filename: MedicalReport.name, // File name
+          content: Buffer.from(await MedicalReport.arrayBuffer()), // Convert file to buffer
+        }]
+        : [],
+    };
 
-    // Send confirmation email to the user
-    await transporter.sendMail({
+    // Send Email to Admin
+    await transporter.sendMail(mailOptionsAdmin);
+
+    // User Confirmation Email
+    const mailOptionsUser = {
       from: process.env.MY_EMAIL,
       to: Email,
       subject: "Thank You for contacting SSB Hospital",
       html: `<html>
               <body>
                 <h2>Hey ${Fname}!</h2>
-                <p>Your query is noted! Our team will contact you as soon as possible.</p>
-              </body>
+                <p>Thank you for reaching out to SSB Hospital. Your query has been noted, and our team will contact you at the earliest. For any immediate assistance, feel free to connect with us at <a href="tel:+919540114114">+91 9540114114</a>.</p>
+                <p>For any immediate assistance, feel free to connect with us at <a href="tel:+919540114114">+91 9540114114</a>.</p>
+                </body>
              </html>`,
-    });
+    };
 
-    // Return success response
+    // Send Email to User
+    await transporter.sendMail(mailOptionsUser);
+
     return NextResponse.json({
       message: "Message Sent",
       success: true,
