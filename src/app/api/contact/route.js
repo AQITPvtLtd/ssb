@@ -18,7 +18,7 @@ export async function POST(request) {
 
     // Database Insert Query
     await pool.query(
-      "INSERT INTO contact(id, name, email, phone, location, message) VALUES (?,?,?,?,?,?)",
+      "INSERT INTO contact (id, name, email, phone, location, date, message) VALUES (?, ?, ?, ?, ?, NOW(), ?)",
       [unique_id, Fname, Email, Phone, Location, Message]
     );
 
@@ -64,7 +64,7 @@ export async function POST(request) {
       html: `<html>
               <body>
                 <h2>Hey ${Fname}!</h2>
-                <p>Thank you for reaching out to SSB Hospital. Your query has been noted, and our team will contact you at the earliest. For any immediate assistance, feel free to connect with us at <a href="tel:+919540114114">+91 9540114114</a>.</p>
+                <p>Thank you for reaching out to SSB Hospital. Your query has been noted, and our team will contact you at the earliest.</p>
                 <p>For any immediate assistance, feel free to connect with us at <a href="tel:+919540114114">+91 9540114114</a>.</p>
                 </body>
              </html>`,

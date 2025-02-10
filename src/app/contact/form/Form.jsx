@@ -168,7 +168,7 @@ const Form = () => {
             type="file"
             id="MedicalReport"
             name="MedicalReport"
-            accept=".pdf, .doc, .docx, .xls, .xlsx, .txt, .jpg, .png, .jpeg"
+            accept=".pdf, .doc, .docx, .xls, .xlsx, .txt, .jpg, .png, .jpeg, .avif"
             className="w-full border border-gray-300 rounded px-3 py-1 focus:outline-none focus:border-blue-500"
             onChange={handleFileChange}
           />
