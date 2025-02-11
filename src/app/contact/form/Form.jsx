@@ -93,12 +93,12 @@ const Form = () => {
 
 
   return (
-    <div className="mt-5">
+    <div className="mt-2">
       <form
         className="bg-gray-50 px-5 py-2 shadow-lg rounded-lg"
         onSubmit={handleSubmit}
       >
-        <h3 className="text-xl font-semibold text-gray-700 mb-4">Submit Your Query</h3>
+        <h3 className="text-xl font-semibold text-gray-700 mb-1">Submit Your Query</h3>
         <div className="mb-4">
           <label className="block text-gray-600 mb-1" htmlFor="Fname">
             Full Name <span className="text-red-500">*</span>
@@ -114,7 +114,7 @@ const Form = () => {
             required
           />
         </div>
-        <div className="mb-4">
+        <div className="mb-2">
           <label className="block text-gray-600 mb-1" htmlFor="Phone">
             Phone Number <span className="text-red-500">*</span>
           </label>
@@ -129,7 +129,7 @@ const Form = () => {
             required
           />
         </div>
-        <div className="mb-4">
+        <div className="mb-2">
           <label className="block text-gray-600 mb-1" htmlFor="Email">
             Email <span className="text-red-500">*</span>
           </label>
@@ -144,7 +144,7 @@ const Form = () => {
             required
           />
         </div>
-        <div className="mb-4">
+        <div className="mb-2">
           <label className="block text-gray-600 mb-1" htmlFor="Location">
             Location <span className="text-red-500">*</span>
           </label>
@@ -173,7 +173,7 @@ const Form = () => {
             required
           ></textarea>
         </div>
-        <div className="mb-4">
+        <div className="mb-2">
           <label className="block text-gray-600 mb-1" htmlFor="MedicalReport">
             Upload Medical Report (Optional)
           </label>

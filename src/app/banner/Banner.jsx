@@ -16,7 +16,7 @@ const Banner = () => {
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 lg:grid grid-cols-12 h-full">
+      <div className="relative z-10 md:grid grid-cols-12 h-full items-center">
         {/* Left Section: Image and Offer */}
         <div className="col-start-2 col-span-5 flex items-center justify-center p-5">
           <div className="relative w-full max-w-md">
