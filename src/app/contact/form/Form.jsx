@@ -24,8 +24,21 @@ const Form = () => {
   };
 
   const handleFileChange = (e) => {
-    setFormData({ ...formData, MedicalReport: e.target.files[0] });
+    const file = e.target.files[0];
+    if (file) {
+      if (file.size > 10 * 1024 * 1024) { // 10MB limit
+        Swal.fire({
+          icon: "warning",
+          title: "File Too Large",
+          text: "Please upload a file smaller than 10MB.",
+        });
+        e.target.value = ""; // Clear the file input
+        return;
+      }
+      setFormData({ ...formData, MedicalReport: file });
+    }
   };
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
