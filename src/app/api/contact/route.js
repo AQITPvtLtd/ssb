@@ -3,6 +3,14 @@ import pool from "@/helper/db";
 import { NextResponse } from "next/server";
 import { v4 as uuid } from "uuid";
 
+export const config = {
+  api: {
+    bodyParser: {
+      sizeLimit: '10mb', // Adjust the limit as needed
+    },
+  },
+};
+
 export async function POST(request) {
   try {
     const formData = await request.formData();
@@ -47,12 +55,10 @@ export async function POST(request) {
              </html>`,
       attachments: MedicalReport
         ? [{
-          filename: MedicalReport.name, // File name
-          content: Buffer.from(await MedicalReport.arrayBuffer()).toString("base64"),
-          encoding: "base64",
-        }]
+            filename: MedicalReport.name, // File name
+            content: Buffer.from(await MedicalReport.arrayBuffer()), // Convert file to buffer
+          }]
         : [],
-
     };
 
     // Send Email to Admin
@@ -68,7 +74,7 @@ export async function POST(request) {
                 <h2>Hey ${Fname}!</h2>
                 <p>Thank you for reaching out to SSB Hospital. Your query has been noted, and our team will contact you at the earliest.</p>
                 <p>For any immediate assistance, feel free to connect with us at <a href="tel:+919540114114">+91 9540114114</a>.</p>
-                </body>
+              </body>
              </html>`,
     };
 
@@ -80,7 +86,7 @@ export async function POST(request) {
       success: true,
     });
   } catch (error) {
-    console.error(error);
+    console.error("Error details:", error);
     return NextResponse.json({
       message: "Failed to send query",
       success: false,
