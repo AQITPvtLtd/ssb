@@ -48,9 +48,11 @@ export async function POST(request) {
       attachments: MedicalReport
         ? [{
           filename: MedicalReport.name, // File name
-          content: Buffer.from(await MedicalReport.arrayBuffer()), // Convert file to buffer
+          content: Buffer.from(await MedicalReport.arrayBuffer()).toString("base64"),
+          encoding: "base64",
         }]
         : [],
+
     };
 
     // Send Email to Admin
