@@ -107,7 +107,7 @@ const Form = () => {
             type="text"
             id="Fname"
             name="Fname"
-            className="w-full border border-gray-300 rounded px-3 py-1 focus:outline-none focus:border-blue-500"
+            className="w-full border border-gray-300 rounded px-3 py-1 focus:outline-none focus:border-blue-500 dark:text-gray-900"
             placeholder="Enter Your Full Name"
             value={formData.Fname}
             onChange={handleChange}
@@ -122,7 +122,7 @@ const Form = () => {
             type="tel"
             id="Phone"
             name="Phone"
-            className="w-full border border-gray-300 rounded px-3 py-1 focus:outline-none focus:border-blue-500"
+            className="w-full border border-gray-300 rounded px-3 py-1 focus:outline-none focus:border-blue-500 dark:text-gray-900"
             placeholder="Enter Your Phone Number"
             value={formData.Phone}
             onChange={handleChange}
@@ -137,7 +137,7 @@ const Form = () => {
             type="email"
             id="Email"
             name="Email"
-            className="w-full border border-gray-300 rounded px-3 py-1 focus:outline-none focus:border-blue-500"
+            className="w-full border border-gray-300 rounded px-3 py-1 focus:outline-none focus:border-blue-500 dark:text-gray-900"
             placeholder="Enter Your Email Address"
             value={formData.Email}
             onChange={handleChange}
@@ -152,7 +152,7 @@ const Form = () => {
             type="text"
             id="Location"
             name="Location"
-            className="w-full border border-gray-300 rounded px-3 py-1 focus:outline-none focus:border-blue-500"
+            className="w-full border border-gray-300 rounded px-3 py-1 focus:outline-none focus:border-blue-500 dark:text-gray-900"
             placeholder="Enter Your Location"
             value={formData.Location}
             onChange={handleChange}
@@ -166,7 +166,7 @@ const Form = () => {
           <textarea
             id="Message"
             name="Message"
-            className="w-full border border-gray-300 rounded px-3 py-1 focus:outline-none focus:border-blue-500"
+            className="w-full border border-gray-300 rounded px-3 py-1 focus:outline-none focus:border-blue-500 dark:text-gray-900"
             placeholder="Describe Health Problem..."
             value={formData.Message}
             onChange={handleChange}
@@ -182,7 +182,7 @@ const Form = () => {
             id="MedicalReport"
             name="MedicalReport"
             accept=".pdf, .doc, .docx, .xls, .xlsx, .txt, .jpg, .png, .jpeg, .avif"
-            className="w-full border border-gray-300 rounded px-3 py-1 focus:outline-none focus:border-blue-500"
+            className="w-full border border-gray-300 rounded px-3 py-1 focus:outline-none focus:border-blue-500 dark:text-gray-900"
             onChange={handleFileChange}
           />
 

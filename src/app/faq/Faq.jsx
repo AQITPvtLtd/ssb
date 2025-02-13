@@ -22,7 +22,7 @@ const Faq = () => {
           <h2 id="accordion-collapse-heading-1">
             <button
               type="button"
-              className="flex items-center justify-between w-full lg:px-5 px-2 lg:py-8 py-5 font-medium rtl:text-right gap-3"
+              className="flex items-center justify-between w-full lg:px-5 px-2 py-5 font-medium rtl:text-right gap-3"
               onClick={() => toggleAccordion(1)}
               aria-expanded={activeIndex === 1}
               aria-controls="accordion-collapse-body-1"
@@ -60,7 +60,7 @@ const Faq = () => {
           <h2 id="accordion-collapse-heading-2">
             <button
               type="button"
-              className="flex items-center justify-between w-full lg:px-5 px-2 lg:py-8 py-5 font-medium rtl:text-right gap-3"
+              className="flex items-center justify-between w-full lg:px-5 px-2 py-5 font-medium rtl:text-right gap-3"
               onClick={() => toggleAccordion(2)}
               aria-expanded={activeIndex === 2}
               aria-controls="accordion-collapse-body-2"
@@ -101,7 +101,7 @@ const Faq = () => {
           <h2 id="accordion-collapse-heading-3">
             <button
               type="button"
-              className="flex items-center justify-between w-full lg:px-5 px-2 lg:py-8 py-5 font-medium rtl:text-right gap-3"
+              className="flex items-center justify-between w-full lg:px-5 px-2 py-5 font-medium rtl:text-right gap-3"
               onClick={() => toggleAccordion(3)}
               aria-expanded={activeIndex === 3}
               aria-controls="accordion-collapse-body-3"
@@ -150,7 +150,7 @@ const Faq = () => {
           <h2 id="accordion-collapse-heading-4">
             <button
               type="button"
-              className="flex items-center justify-between w-full lg:px-5 px-2 lg:py-8 py-5 font-medium rtl:text-right gap-3"
+              className="flex items-center justify-between w-full lg:px-5 px-2 py-5 font-medium rtl:text-right gap-3"
               onClick={() => toggleAccordion(4)}
               aria-expanded={activeIndex === 4}
               aria-controls="accordion-collapse-body-4"
