@@ -14,7 +14,7 @@ export const config = {
 export async function POST(request) {
   try {
     const formData = await request.formData();
-
+    
     const Fname = formData.get("Fname");
     const Email = formData.get("Email");
     const Phone = formData.get("Phone");
@@ -55,9 +55,9 @@ export async function POST(request) {
              </html>`,
       attachments: MedicalReport
         ? [{
-            filename: MedicalReport.name, // File name
-            content: Buffer.from(await MedicalReport.arrayBuffer()), // Convert file to buffer
-          }]
+          filename: MedicalReport.name, // File name
+          content: Buffer.from(await MedicalReport.arrayBuffer()), // Convert file to buffer
+        }]
         : [],
     };
 
