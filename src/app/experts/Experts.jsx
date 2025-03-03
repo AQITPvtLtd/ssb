@@ -34,9 +34,9 @@ const Experts = () => {
               <p className="mb-4 text-sm text-gray-700 font-medium">
                 {e.position}
               </p>
-              <p className="mb-4 text-sm text-gray-700 font-medium line-clamp-3">
+              {/* <p className="mb-4 text-sm text-gray-700 font-medium line-clamp-3">
                 {e.about}
-              </p>
+              </p> */}
               <Link
                 href={`/experts/${e.id}`}
                 className="inline-block px-4 py-2 border-2 border-[#eb5f30] text-[#eb5f30] text-sm font-semibold hover:bg-[#eb5f30] hover:text-white transition-all duration-300"
