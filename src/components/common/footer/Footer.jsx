@@ -10,7 +10,7 @@ import { FaGlobe } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="dark:bg-white lg:px-0 px-5">
-      <div className="lg:grid grid-cols-12 gap-6 py-5 pt-10">
+      <div className="lg:grid grid-cols-12 gap-6 py-5">
         {/* Left Section */}
         <div className="col-start-2 col-span-4 px-2 lg:px-0">
           <Link href="/">
@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
 
         {/* Right Section */}
-        <div className="col-start-7 col-span-5 mt-10 lg:mt-0 px-2">
+        <div className="col-start-7 col-span-5 lg:mt-0 px-2">
           <h2 className="text-3xl font-semibold mb-4 dark:text-black">
             Get in Touch
           </h2>
@@ -119,4 +119,4 @@ const Footer = () => {
   );
 };
 
-export default Footer; 2
+export default Footer;
