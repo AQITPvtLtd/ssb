@@ -4,111 +4,108 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { IoLocationSharp } from "react-icons/io5";
-import { MdEmail } from "react-icons/md";
 import { LuPhoneCall } from "react-icons/lu";
+import { FaGlobe } from "react-icons/fa";
 
 const Top = () => {
   const [openMenu, setOpenMenu] = useState(false);
+
   return (
-    <div>
-      <nav className="bg-white dark:bg-white border-gray-200 ">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <Link
-            href="https://ssbhealthcare.com/"
-            target="__blank"
-            className="flex items-center space-x-3 rtl:space-x-reverse"
-          >
-            <Image
-              src="/logo/logo.png"
-              alt="SSB Logo"
-              className=""
-              width={270}
-              height={250}
-            />
-          </Link>
-          <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <div className="lg:block hidden">
-              <Link
-                href="tel:+919540114114"
-                className="bg-[#eb5f30] text-white flex gap-3 text-lg font-medium py-2  px-6 rounded-full shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
-              >
-                <LuPhoneCall className="text-2xl mt-[2px]" /> Contact us
-              </Link>
-            </div>
-            <button
-              type="button"
-              onClick={() => setOpenMenu(!openMenu)}
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="navbar-cta"
-              aria-expanded={openMenu}
+    <nav className="bg-white shadow-md">
+      <div className="max-w-screen-xl mx-auto px-4 py-3 flex items-center justify-between flex-wrap gap-3">
+        {/* Logo */}
+        <Link href="https://ssbhealthcare.com/" target="_blank" className="flex items-center">
+          <Image
+            src="/logo/logo.png"
+            alt="SSB Logo"
+            width={200}
+            height={100}
+            className="w-40 sm:w-48 md:w-64"
+          />
+        </Link>
+
+        {/* Center Info (Hidden on small screens) */}
+        <div className="hidden md:flex flex-col text-sm md:text-base text-gray-800 text-center">
+          <div className="flex items-center gap-2 justify-center">
+            <FaGlobe className="text-base" />
+            <Link
+              href="https://ssbhealthcare.com/"
+              className="font-semibold hover:text-[#eb5f30]"
+              target="_blank"
             >
-              <span className="sr-only">Open main menu</span>
-              <svg
-                className="w-5 h-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
-              </svg>
-            </button>
+              ssbhealthcare.com
+            </Link>
           </div>
-          <div
-            className={`${
-              openMenu ? "block" : "hidden"
-            } items-center justify-between w-full md:flex md:w-auto md:order-1`}
-            id="navbar-cta"
-          >
-            <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
-              <li>
-                <div className="flex items-center justify-center gap-2 text-gray-700">
-                  <MdEmail className="text-xl" />
-                  <Link
-                    href="mailto:info@ssbhealthcare.com"
-                    className="font-semibold text-lg hover:text-[#eb5f30]"
-                  >
-                    info@ssbhealthcare.com
-                  </Link>
-                </div>
-
-                <div className="flex text-center gap-2 text-gray-700">
-                  <div className="text-2xl lg:mt-2 mt-1">
-                    <IoLocationSharp />
-                  </div>
-                  <Link
-                    href="https://maps.app.goo.gl/cgtmnHzK4aEEFYtN7"
-                    className="text-lg hover:text-[#eb5f30] font-semibold"
-                    target="__blank"
-                  >
-                    Plot No. 69, Mathura Road, Near Neelam Flyover,{" "}
-                    <br className="lg:block hidden" /> Sector 20 A, Faridabad,
-                    Haryana 121002
-                  </Link>
-                </div>
-              </li>
-
-              <li className="lg:hidden block">
-                <div className="flex justify-center mt-2">
-                  <Link
-                    href="tel:+919540114114"
-                    className="bg-[#eb5f30] text-white flex gap-3 text-lg font-medium py-2  px-6 rounded-full shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
-                  >
-                    <LuPhoneCall className="text-2xl mt-[2px]" /> Contact us
-                  </Link>
-                </div>
-              </li>
-            </ul>
+          <div className="flex items-start text-center gap-2 mt-1">
+            <IoLocationSharp className="text-lg mt-1" />
+            <Link
+              href="https://maps.app.goo.gl/cgtmnHzK4aEEFYtN7"
+              className="font-semibold hover:text-[#eb5f30] text-center"
+              target="_blank"
+            >
+              Plot No. 69, Mathura Road, Near Neelam Flyover, <br /> Sector 20 A, Faridabad, Haryana 121002
+            </Link>
           </div>
         </div>
-      </nav>
-    </div>
+
+        {/* Call + Hamburger */}
+        <div className="flex items-center gap-3">
+          <Link
+            href="tel:+919540114114"
+            className="bg-[#eb5f30] text-white flex items-center gap-2 text-sm md:text-base font-medium py-2 px-4 rounded-full hover:scale-105 transition"
+          >
+            <LuPhoneCall className="text-xl" />
+            <span className="hidden lg:block">Call Now</span>
+          </Link>
+
+          {/* Hamburger */}
+          <button
+            onClick={() => setOpenMenu(!openMenu)}
+            className="md:hidden p-2 text-gray-700"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Menu - if needed */}
+      {openMenu && (
+        <div className="md:hidden px-4 pb-4 text-gray-800 text-sm">
+          <div className="flex items-center gap-2 mb-2">
+            <FaGlobe className="text-base" />
+            <Link
+              href="https://ssbhealthcare.com/"
+              className="font-semibold hover:text-[#eb5f30]"
+              target="_blank"
+            >
+              ssbhealthcare.com
+            </Link>
+          </div>
+          <div className="flex items-start gap-2">
+            <span><IoLocationSharp className="text-lg mt-1" /></span>
+            <Link
+              href="https://maps.app.goo.gl/cgtmnHzK4aEEFYtN7"
+              className="font-semibold hover:text-[#eb5f30]"
+              target="_blank"
+            >
+              Plot No. 69, Mathura Road, Near Neelam Flyover, Sector 20 A, Faridabad, Haryana 121002
+            </Link>
+          </div>
+        </div>
+      )}
+    </nav>
   );
 };
 
