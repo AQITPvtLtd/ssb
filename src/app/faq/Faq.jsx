@@ -12,7 +12,7 @@ const Faq = () => {
 
   return (
     <div>
-      <h1 className="lg:text-5xl text-center text-[#eb5f30] font-semibold md:text-5xl sm:text-3xl text-2xl px-20 py-10">
+      <h1 className="lg:text-5xl text-center text-[#eb5f30] font-semibold md:text-5xl text-3xl px-20 py-10">
         Frequently Asked Questions
       </h1>
 

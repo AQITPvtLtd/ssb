@@ -56,7 +56,7 @@ const Footer = () => {
           {/* Emergency and Appointment Section */}
 
           <div className="flex gap-2 items-center mb-2">
-            <IoIosCall className="text-3xl text-[#eb5f30]" />
+            <IoIosCall className="text-2xl text-[#eb5f30]" />
             <p className="font-semibold text-lg text-gray-800 mt-1">
               Appointment:
             </p>
@@ -95,9 +95,9 @@ const Footer = () => {
 
 
           {/* Address Section */}
-          <div className="flex  items-center mb-2">
+          <div className="flex gap-2 mb-2">
             <div>
-              <IoLocationSharp className="text-[#eb5f30] text-3xl" />
+              <IoLocationSharp className="text-[#eb5f30] text-2xl" />
             </div>
             <Link
               href="https://maps.app.goo.gl/cgtmnHzK4aEEFYtN7"
